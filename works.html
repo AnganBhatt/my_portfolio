@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>All Works – Angan Bhattacharjee</title>
+  <meta name="description" content="Angan Bhattacharjee – web developer and CSE student from Chittagong, Bangladesh.">
+
+  <!-- Fonts from Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Your CSS file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ HEADER / NAVIGATION ============ -->
+  <header class="site-header">
+    <div class="pill">
+      <a class="logo" href="index.html">AB.</a>
+      <nav class="nav" id="nav" aria-label="Main menu">
+        <a href="index.html#about">About</a>
+        <a href="index.html#skills">Skills</a>
+        <a href="works.html">Works</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <a class="cta" href="index.html#contact">Hire me</a>
+      <!-- Menu button: only visible on phones -->
+      <button class="burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ PAGE TITLE ============ -->
+    <section class="page-head">
+      <div class="wrap">
+        <h2>All works</h2>
+        <p class="lead">Every project I’ve built. Search, filter, and click one to open the live website.</p>
+
+        <!-- Filter buttons are created by script.js from the project categories -->
+        <div class="toolbar">
+          <div class="filters" id="filters" aria-label="Filter projects"></div>
+          <input class="search" id="search" type="search" placeholder="Search projects..." aria-label="Search projects">
+        </div>
+        <p class="count" id="count"></p>
+      </div>
+    </section>
+
+    <!-- ============ ALL PROJECTS (created by script.js) ============ -->
+    <section class="works-page">
+      <div class="wrap">
+        <div class="grid grid-3" id="allWorks"></div>
+        <noscript><p class="empty">Please turn on JavaScript to see the projects.</p></noscript>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <h2>Let’s build something.</h2>
+      <div>
+        <div>
+          <p class="lead">Have a project or just want to say hi? Send me a message.</p>
+          <!-- TODO: put your real email and social links -->
+          <a class="mail" href="mailto:you@example.com">you@example.com</a>
+          <div class="social">
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a>
+          </div>
+        </div>
+
+        <!-- Contact form. script.js sends it to your backend (see CONFIG in script.js).
+             The "name" attributes (name, email, message) are the field names your backend will receive. -->
+        <form id="contactForm" novalidate>
+          <input type="text" name="name" placeholder="Your name" autocomplete="name" required>
+          <input type="email" name="email" placeholder="Email" autocomplete="email" required>
+          <textarea name="message" rows="4" placeholder="Tell me about your project" required></textarea>
+          <!-- Spam trap: hidden from people, bots fill it. Do not remove. -->
+          <input class="hidden-field" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <button class="btn" type="submit">Send message <span>→</span></button>
+          <p class="form-status" id="formStatus" role="status"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">© <span id="year">2026</span> Angan Bhattacharjee. All rights reserved.</footer>
+
+  <!-- JavaScript files: projects.js must come BEFORE script.js -->
+  <script src="projects.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
