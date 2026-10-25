@@ -21,63 +21,44 @@
 
 const PROJECTS = [
   {
-    title: "Furniro Furniture Store",
+    title: "Wanderline Travels",
     category: "E-commerce",
-    description: "A furniture shop website built from a Figma design.",
-    tags: ["HTML", "CSS", "Bootstrap"],
-    url: "#",          // TODO: replace with your live link
-    image: "",
+    description: "Travel Agency Website – Concept Project",
+    tags: ["HTML", "CSS", "Bootstrap" ,"java script"],
+    url: "https://anganbhatt.github.io/travel_agency/",          // TODO: replace with your live link
+    image: "image/travelagency.png",
     pattern: 1,
     featured: true
   },
   {
-    title: "Nexcent Landing Page",
-    category: "Landing Page",
-    description: "A clean, responsive business landing page.",
-    tags: ["HTML", "CSS", "Bootstrap"],
-    url: "#",          // TODO
-    image: "",
+    title: "Ember & Spice",
+    category: "E-commerce",
+    description: "Restaurant Website with Online Ordering – Concept Project",
+    tags: ["HTML", "CSS", "Bootstrap","java script"],
+    url: "https://anganbhatt.github.io/Resturant_website/",          // TODO
+    image: "image/resturant.png",
     pattern: 2,
     featured: true
   },
   {
-    title: "Designer Portfolio",
-    category: "Portfolio",
-    description: "A portfolio website built for a UI/UX designer.",
+    title: "ecobazar",
+    category: "E-commerce",
+    description: "demo e-stor project",
     tags: ["HTML", "CSS", "Bootstrap"],
-    url: "#",          // TODO
-    image: "",
+    url: "https://anganbhatt.github.io/Ecobazar_website/",          // TODO
+    image: "image/ecommerce-1.png",
     pattern: 3,
     featured: true
   },
   {
-    title: "E-commerce Admin Dashboard",
-    category: "Web App",
-    description: "A front-end admin dashboard that saves data in localStorage.",
-    tags: ["HTML", "CSS", "JavaScript"],
-    url: "#",          // TODO
-    image: "",
+    title: "Urbano",
+    category: "",
+    description: "Modern E-commerce Store – Concept Project",
+    tags: ["HTML", "CSS", "JavaScript" , "bootstrap"],
+    url: "https://anganbhatt.github.io/deom_ecommerce/",          // TODO
+    image: "image/ecommerce-2.png",
     pattern: 4,
     featured: true
   },
-  {
-    title: "Personal Portfolio",
-    category: "Portfolio",
-    description: "My first personal portfolio website.",
-    tags: ["HTML", "CSS", "Bootstrap"],
-    url: "#",          // TODO
-    image: "",
-    pattern: 5,
-    featured: true
-  },
-  {
-    title: "4K Video Site Layout",
-    category: "UI Concept",
-    description: "A video-sharing site layout concept.",
-    tags: ["HTML", "CSS"],
-    url: "#",          // TODO
-    image: "",
-    pattern: 6,
-    featured: true
-  }
+  
 ];
